@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @property.name %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @property.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @property.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @property.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @property.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @property.zip %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @property.phone %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @property.fax %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @property.email %>
+</p>
+
+<p>
+  <strong>Check in at:</strong>
+  <%= @property.check_in_at %>
+</p>
+
+<p>
+  <strong>Check out at:</strong>
+  <%= @property.check_out_at %>
+</p>
+
+<p>
+  <strong>Night audit auto:</strong>
+  <%= @property.night_audit_auto %>
+</p>
+
+<p>
+  <strong>Night audit time:</strong>
+  <%= @property.night_audit_time %>
+</p>
+
+<p>
+  <strong>Night audit emails:</strong>
+  <%= @property.night_audit_emails %>
+</p>
+
+<p>
+  <strong>Print reg cards auto:</strong>
+  <%= @property.print_reg_cards_auto %>
+</p>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>

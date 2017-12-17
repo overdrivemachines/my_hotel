@@ -15,6 +15,21 @@ class PropertiesController < ApplicationController
   # GET /properties/new
   def new
     @property = Property.new
+    @property.name = Faker::Company.name
+    @property.address1 = Faker::Address.street_address
+    @property.address2 = ""
+    @property.city = Faker::Address.city
+    @property.state = Faker::Address.state
+    @property.zip = Faker::Address.zip
+    @property.phone = Faker::PhoneNumber.phone_number
+    @property.fax = Faker::PhoneNumber.phone_number
+    @property.email = Faker::Internet.email
+    @property.check_in_at = "15:00"
+    @property.check_out_at = "11:00"
+    @property.night_audit_auto = [true, false].sample
+    @property.night_audit_time = "04:00"
+    @property.night_audit_emails = Faker::Internet.email
+    @property.print_reg_cards_auto = [true, false].sample
   end
 
   # GET /properties/1/edit

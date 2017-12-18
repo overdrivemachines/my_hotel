@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :room_types
   resources :properties
 
   root 'properties#index'
